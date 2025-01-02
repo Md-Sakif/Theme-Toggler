@@ -1,0 +1,45 @@
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+#dark-button {
+    fill: black;
+    display: block;
+}
+
+#light-button {
+    fill: white;
+    display: none;
+}
+
+body {
+    background-color: white;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+svg[role="button"] {
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    #dark-button {
+        display: none;
+    }
+    
+    #light-button {
+        display: block;
+    }
+
+    body {
+        background-color: black;
+    }
+}
+  
