@@ -3,7 +3,6 @@
     padding: 0;
     --light: white;
     --dark: black;
-    --background: var(--light);
 }
 
 #dark-button {
@@ -17,6 +16,7 @@
 }
 
 body {
+    --background: var(--light);
     background-color: var(--background);
 }
 
@@ -42,7 +42,8 @@ svg[role="button"] {
     }
 
     body {
-        background-color: black;
+        --background: var(--dark);
+        background-color: var(--background);
     }
 }
   
