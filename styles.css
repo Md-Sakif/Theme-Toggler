@@ -43,7 +43,6 @@ svg[role="button"] {
 
     body {
         --background: var(--dark);
-        background-color: var(--background);
     }
 }
   
