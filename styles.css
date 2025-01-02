@@ -1,20 +1,23 @@
 :root {
     margin: 0;
     padding: 0;
+    --light: white;
+    --dark: black;
+    --background: var(--light);
 }
 
 #dark-button {
-    fill: black;
+    fill: var(--dark);
     display: block;
 }
 
 #light-button {
-    fill: white;
+    fill: var(--light);
     display: none;
 }
 
 body {
-    background-color: white;
+    background-color: var(--background);
 }
 
 div {
